@@ -1,6 +1,28 @@
-<!doctype html><html lang="en">
-    <head>
-        <body>
-            <h1>Hell!</h1>
-        </body>
-    </head>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+
+    <script type="text/javascript">
+        var Pushwoosh = Pushwoosh || [];
+        Pushwoosh.push(['init', {
+            logLevel: 'info', // possible values: error, info, debug
+            applicationCode: '2F230-6753F', // you application code from Pushwoosh Control Panel
+            defaultNotificationTitle: 'Pushwoosh', // sets a default title for push notifications
+            autoSubscribe: false, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+            subscribeWidget: {
+              enable: true
+            },
+            tags: {
+                'Name': 'John Doe'   	// optional, set custom Tags
+            }										
+        }]);
+        </script>
+
+<body>
+    <h1>Hell!</h1>
+</body>
+
+</head>

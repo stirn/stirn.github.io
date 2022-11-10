@@ -1,0 +1,7 @@
+{
+  "name": "pw",
+  "short_name": "pw",
+  "gcm_sender_id": "602691518281",
+  "display": "standalone",
+  "gcm_user_visible_only": true
+}
