@@ -20,10 +20,6 @@
                 'Name': 'John Doe'   	// optional, set custom Tags
             }
         }]);
-        // Load Event
-        Pushwoosh.push(['onLoad', function (api) {
-            alert("PW LOADED");
-        }]);
     </script>
 
     <style>
@@ -59,22 +55,7 @@
 
 <script>
     function clickGreen() {
-        
-        data = {"request": {"application": "2F230-6753F","auth": "qhjJ6ERyoaJotHqa7KK5MFdpjY2uBPKfCc6DW7NY4g2woGcMlnxeh2X3uOb0D2HPn3g0RSaFfMjnOk2GJonS","notifications": [{"send_date": "now","ignore_user_timezone": true,"content": {"en":"English"},"platforms": [3,11,12]}]}}
-
-        $.ajax({
-            type: "POST",
-            url: "https://cp.pushwoosh.com/json/1.3/createMessage",
-            data: JSON.stringify(data),
-            contentType: "jsonp",
-            crossDomain:true,
-            success: function (result) {
-                console.log(result);
-            },
-            error: function (result, status) {
-                console.log(result);
-            }
-        });
+        alert("Green button clicked")
     }
 
     function clickBlue() {
