@@ -60,7 +60,7 @@
 <script>
     function clickGreen() {
         
-        data = {"request": {"application": "2F230-6753F","auth": "qhjJ6ERyoaJotHqa7KK5MFdpjY2uBPKfCc6DW7NY4g2woGcMlnxeh2X3uOb0D2HPn3g0RSaFfMjnOk2GJonS","notifications": [{"send_date": "now","ignore_user_timezone": true,"content": {"en":"English"},"platforms": [3,11,12]}]}}}
+        data = {"request": {"application": "2F230-6753F","auth": "qhjJ6ERyoaJotHqa7KK5MFdpjY2uBPKfCc6DW7NY4g2woGcMlnxeh2X3uOb0D2HPn3g0RSaFfMjnOk2GJonS","notifications": [{"send_date": "now","ignore_user_timezone": true,"content": {"en":"English"},"platforms": [3,11,12]}]}}
 
         $.ajax({
             type: "POST",
@@ -73,7 +73,7 @@
             error: function (result, status) {
                 console.log(result);
             }
-        })
+        });
     }
 
     function clickBlue() {
